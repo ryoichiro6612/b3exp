@@ -106,6 +106,11 @@ int sample1_4(int argc, char *argv[])
 
     dst_img = cv::Scalar(0);
     frame.copyTo(dst_img, msk_img);
+
+	Mat bg_img = imread("wa-i.jpg");
+	Mat resized_bg_img;
+	resize(bg_img, resized_bg_img, dst_img.size());
+	resized_bg_img.copyTo(dst_img, ~msk_img);
     
     cv::imshow("Input", frame);
     cv::imshow("FG", dst_img);
