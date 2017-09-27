@@ -1,2 +1,2 @@
-/b3exp/
+/b3exp/*
 !*.cpp
