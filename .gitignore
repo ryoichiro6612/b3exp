@@ -1,2 +1,6 @@
-/b3exp/*
-!/b3exp/b3exp/*.cpp
+/b3exp/x64/*
+/b3exp/*.sln
+/b3exp/b3exp/*
+/b3exp/.vs/*
+!b3exp/b3exp/*.cpp
+b3exp/b3exp/stdafx.cpp
