@@ -79,6 +79,9 @@ int sample1_4(int argc, char *argv[])
   bool loop_flag = true;
   while(loop_flag){
     cap >> frame;
+	if (frame.rows == 0) {
+		break;
+	}
 	frame.convertTo(tmp_img, tmp_img.type());
 
     // 4. check whether pixels are background or not
