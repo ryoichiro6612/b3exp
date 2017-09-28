@@ -8,7 +8,7 @@
 
 int main(int argc, char* argv[])
 {
-	sample1_4(argc, argv);
+	sample1_5(argc, argv);
     return 0;
 }
 
